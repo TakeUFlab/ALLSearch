@@ -2,6 +2,7 @@
 #Logo {
     background: linear-gradient(to top, #0d92eb, #ff1493);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     font-size: 170px;
     position: absolute;
@@ -124,6 +125,7 @@
     #Logo {
         background: linear-gradient(to top, #0d92eb, #ff1493);
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
         font-size: 120px;
         position: absolute;
