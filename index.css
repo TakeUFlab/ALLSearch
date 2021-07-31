@@ -6,7 +6,7 @@
     color: transparent;
     font-size: 170px;
     position: absolute;
-    top: 32%;
+    top: 25%;
     left: 30.5%;
     font-family: 'Inconsolata', monospace;
 }
@@ -129,7 +129,7 @@
         color: transparent;
         font-size: 120px;
         position: absolute;
-        top: 25%;
+        top: 15%;
         left: 30.5%;
         font-family: 'Inconsolata', monospace;
         
@@ -139,7 +139,7 @@
         width: 800px;
         height: 40px;
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 16%;
         border: 5px solid #506ed2;
         border-radius: 44px;
@@ -152,7 +152,7 @@
         width: 50px;
         position: absolute;
         left: 80%;
-        top: 40.3%;
+        top: 35%;
     }
     
     .options img {
