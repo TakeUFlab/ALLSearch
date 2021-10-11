@@ -2,48 +2,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALLSearch</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="Logo">ALLSearch</div>
-    <input type="text" id="search" placeholder="search on Google" onkeydown="gosearch(event)">
-    <img src="img/search.png" alt="search" id="searbtn">
-    <h1 id="copyright">Copyright © 2021 <a href="https://github.com/TakeUFlab">TakeUFlab.lab</a> Devloper : <a href="https://github.com/banahaker">LAZPbanahkaker(Andy)</a></h1>
-    <div id="choose">
-        <div id="google" class="options">
-            <img src="img/google.png" >
-            <p>google</p>
-        </div>
-        <div id="bing" class="options">
-            <img src="img/bing.png" onclick="GOlink('bing')">
-            <p>bing</p>
-        </div>
-        <div id="yahoo" class="options">
-            <img src="img/yahoo.png" onclick="GOlink('yahoo')">
-            <p>yahoo</p>
-        </div>
-        <div id="duckduckgo" class="options">
-            <img src="img/duckgo.png" onclick="GOlink('duck')">
-            <p>duckGO</p>
-        </div>
-        <div id="youtube" class="options">
-            <img src="img/youtube.png" onclick="GOlink('YT')">
-            <p>youtube</p>
-        </div>
-        <div id="bilibili" class="options">
-            <img src="img/bilibili.jpg" onclick="GOlink('bili')">
-            <p>bilibili</p>
-        </div>
-        <div id="amazon" class="options">
-            <img src="img/amazon.png" onclick="GOlink('amazon')">
-            <p>amazon</p>
-        </div>
-        <div id="github" class="options">
-            <img src="img/github.png" onclick="GOlink('github')">
-            <p>Github</p>
-        </div>
+    <div class="Logo">ALLSearch</div>
+    <input type="text" id="searchInput" class="searchInput" placeholder="Search something...."/>
+    <div class="options">
+        <h1>Change Search Engine ▼</h1>
+        <ul>
+            <li onclick="setEngine('Yahoo')">yahoo</li>
+            <li onclick="setEngine('Google')">google</li>
+            <li onclick="setEngine('bing')">bing</li>
+            <li onclick="setEngine('BiliBili')">BiliBili</li>
+            <li onclick="setEngine('DuckDuckGo')">DuckDuckGo</li>
+            <li onclick="setEngine('github')" >github</li>
+            <li onclick="setEngine('amazon')">amazon</li>
+            <li onclick="setEngine('Youtube')">Youtube</li>
+        </ul>
     </div>
-    <script src="index.js"></script>
 </body>
+<script src="index.js"></script>
 </html>
