@@ -14,7 +14,7 @@ function setEngine(engineName) {
 
 window.addEventListener('keyup', (e) => {
     searchInput = document.getElementById('searchInput').value;
-    if (e.keyCode == 13) {
+    if (e.keyCode == 13 && searchInput !== "") {
         switch (engine) {
             case 'Google':
                 window.location.assign(`https://www.google.com/search?q=${searchInput}`);
