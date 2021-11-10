@@ -57,21 +57,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 450px) {
-	.options>h1 {
-		display: block;
-		color: #fff;
-		font-size: 12px;
-		transition: .6s ease-in;
-		margin-left: 0px;
-		width: 100vw;
-	}
-	.options {
-		height: auto;
-		padding: 10px;
-	}
-}
-
 .searchInput:focus {
 	border: #0066ff solid 2px;
 }
@@ -96,7 +81,7 @@ body {
 }
 
 .options:hover>ul {
-	opacity: 1;
+	visibility: visible;
 }
 
 .options:hover>h1 {
@@ -107,13 +92,13 @@ body {
 	width: 100vw;
 	display: inline;
 	color: #fff;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	transition: .6s ease-in;
 	padding-left: 15px;
 }
 
 .options>ul {
-	opacity: 0;
+	visibility: hidden;
 	width: 80%;
 	list-style: none;
 	display: flex;
@@ -121,7 +106,6 @@ body {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	font-size: 1.5em;
-	transition: .5s;
 }
 
 .options>ul>li {
@@ -130,9 +114,37 @@ body {
 	padding: 5px;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: .2s ease-in;
 }
 
 .options>ul>li:hover {
 	background-color: #001aff75;
+}
+
+ion-icon {
+	width: 45px;
+}
+
+
+@media screen and (max-width: 450px) {
+	.options>h1 {
+		display: block;
+		color: #fff;
+		font-size: 12px;
+		transition: .6s ease-in;
+		margin-left: 0px;
+		width: 100vw;
+		padding-left: 0;
+	}
+	.options {
+		padding: 10px;
+	}
+
+	.options>ul>li {
+		text-align: center;
+		width: 50%;
+	}
+
+	.options:hover {
+		height: auto;
+	}
 }
